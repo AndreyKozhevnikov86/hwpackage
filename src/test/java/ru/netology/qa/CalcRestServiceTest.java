@@ -7,10 +7,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class CalcRestServiceTest {
     @ParameterizedTest
     @CsvSource({
-            "3,10_000,3_000,20_000"
+            "3,10000,3000,20000"
     })
     public void test1(int expected, int income, int expenses, int threshold) {
-        CalcRestServiceTest service = new CalcRestServiceTest();
+        CalcRestService service = new CalcRestService();
         int expected = 3;
         int actual = service.calculate(income, expenses, threshold);
         Assertions.assertEquals(expected, actual);
