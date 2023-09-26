@@ -11,6 +11,7 @@ public class CalcRestServiceTest {
     })
     public void test1(int expected, int income, int expenses, int threshold) {
         CalcRestServiceTest service = new CalcRestServiceTest();
+        int expected = 3;
         int actual = service.calculate(income, expenses, threshold);
         Assertions.assertEquals(expected, actual);
 
