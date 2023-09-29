@@ -11,8 +11,8 @@ public class CalcRestServiceTest {
     })
     public void test1(int expected, int income, int expenses, int threshold) {
         CalcRestService service = new CalcRestService();
-        int expected = 3;
         int actual = service.calculate(income, expenses, threshold);
+        System.out.println("Дней для отдыха " + actual);
         Assertions.assertEquals(expected, actual);
 
     }

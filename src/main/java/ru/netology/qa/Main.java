@@ -6,6 +6,6 @@ public class Main {
         CalcRestService service = new CalcRestService();
         int expenses = 3000;
         int income = 10000;
-        int threshhold = 20000;
+        int threshold = 20000;
     }
 }
